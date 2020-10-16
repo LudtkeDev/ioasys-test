@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Coordinator {
+public protocol Coordinator: class {
     func start()
 }
 
