@@ -1,0 +1,70 @@
+PODS:
+  - Alamofire (5.2.2)
+  - KeychainAccess (4.2.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - OxeNetworking (0.2.0):
+    - Moya (~> 14.0)
+    - OxeNetworking/OxeNetworking (= 0.2.0)
+    - SwiftyJSON (~> 5.0)
+  - OxeNetworking/OxeNetworking (0.2.0):
+    - Moya (~> 14.0)
+    - SwiftyJSON (~> 5.0)
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.40.3)
+  - SwiftyJSON (5.0.0)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - KeychainAccess
+  - OxeNetworking
+  - SwiftGen (~> 6.0)
+  - SwiftLint
+  - Swinject (~> 2.7.0)
+  - SwinjectAutoregistration (~> 2.7.0)
+  - SwinjectStoryboard (from `https://github.com/Swinject/SwinjectStoryboard`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainAccess
+    - Moya
+    - OxeNetworking
+    - SwiftGen
+    - SwiftLint
+    - SwiftyJSON
+    - Swinject
+    - SwinjectAutoregistration
+
+EXTERNAL SOURCES:
+  SwinjectStoryboard:
+    :branch: master
+    :git: https://github.com/Swinject/SwinjectStoryboard
+
+CHECKOUT OPTIONS:
+  SwinjectStoryboard:
+    :commit: 0ca45c83a8aa398c153d8a036c95abb4343cfa0c
+    :git: https://github.com/Swinject/SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  OxeNetworking: 15f44757b83899cf773a30e202feb69f66d6cc41
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+  SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
+
+PODFILE CHECKSUM: c3055303bec70d79f248b2671ce2a86e2aa0f23b
+
+COCOAPODS: 1.9.3

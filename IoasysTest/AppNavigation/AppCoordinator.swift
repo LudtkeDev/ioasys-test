@@ -42,6 +42,6 @@ public class AppCoordinator: Coordinator {
             print("Make company detail coordinator")
         }
         
-        coordinator.start()
+//        coordinator.start()
     }
 }

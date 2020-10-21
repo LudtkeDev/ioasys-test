@@ -12,7 +12,7 @@ import UIKit
 public protocol Destination {
     var viewControllerType: UIViewController.Type { get }
     var storyboardName: String { get }
-    func asViewController(fromContainer container: Container) -> UIViewController?
+//    func asViewController(fromContainer container: Container) -> UIViewController?
 }
 
 public extension Destination {

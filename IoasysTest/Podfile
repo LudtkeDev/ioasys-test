@@ -1,0 +1,85 @@
+platform :ios, '11.0'
+use_frameworks!
+
+# Generic pods
+
+def sharedPods
+  pod 'SwiftLint'
+end
+
+# Modules pods
+
+def presentationPods
+  pod 'SwiftGen', '~> 6.0'
+end
+
+def diPods
+  pod 'OxeNetworking'
+  pod 'Swinject', '~> 2.7.0'
+  pod 'SwinjectAutoregistration', '~> 2.7.0'
+  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard', :branch => 'master'
+end 
+
+def networkingPods
+  pod 'OxeNetworking'
+  pod 'Alamofire', '~> 5.2'
+end 
+
+def storagePods
+  pod 'KeychainAccess'
+end
+
+# Targets
+
+target 'IoasysTest' do
+  sharedPods
+  presentationPods
+  diPods
+  networkingPods
+  storagePods
+end
+
+target 'IoasysTestTests' do
+  end
+
+target 'IoasysTestUITests' do
+end
+
+target 'AppData' do
+  sharedPods
+end
+
+target 'AppNavigation' do
+  sharedPods
+  diPods
+end
+
+target 'Common' do
+  sharedPods
+  presentationPods
+  diPods
+end
+
+target 'DependencesInjector' do
+  sharedPods
+  diPods
+end
+
+target 'Domain' do
+  sharedPods
+  diPods
+end
+
+target 'Networking' do
+  sharedPods
+  networkingPods
+end
+
+target 'Storage' do
+  sharedPods
+  storagePods
+end
+
+target 'UserAccess' do
+  sharedPods
+end
