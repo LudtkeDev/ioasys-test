@@ -1,0 +1,24 @@
+xcassets:
+  - inputs: Features/UserAccess/Resources/UserAccess.xcassets
+    outputs:
+      - templateName: swift5
+        output:
+            Features/UserAccess/Helpers/Generated/SwiftGenAssets.swift
+        params:
+          publicAccess: true
+ib:
+  - inputs: Features/UserAccess/Storyboards
+    outputs:
+      - templateName: scenes-swift5
+        output:
+            Features/UserAccess/Helpers/Generated/SwiftGenStoryboards.swift
+        params:
+          publicAccess: true
+strings:
+  - inputs: Features/UserAccess/Resources/UserAccess.strings
+    outputs:
+      - templateName: structured-swift5
+        output:
+            Features/UserAccess/Helpers/Generated/SwiftGenStrings.swift
+        params:
+          publicAccess: true

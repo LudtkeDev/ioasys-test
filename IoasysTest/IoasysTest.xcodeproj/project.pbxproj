@@ -22,12 +22,22 @@
 		C916218D2537253F000714D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C916218B2537253F000714D8 /* LaunchScreen.storyboard */; };
 		C91621982537253F000714D8 /* IoasysTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91621972537253F000714D8 /* IoasysTestTests.swift */; };
 		C91621A325372540000714D8 /* IoasysTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91621A225372540000714D8 /* IoasysTestUITests.swift */; };
+		C95D9CFD2541A90E00487293 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E90C51253877AD0051AE21 /* Coordinator.swift */; };
+		C95D9D012541ABC500487293 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D9D002541ABC500487293 /* UINavigationControllerExtension.swift */; };
+		C95D9D032541AC2200487293 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D9D022541AC2200487293 /* UIViewControllerExtension.swift */; };
+		C95D9D052541B1DD00487293 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D9D042541B1DD00487293 /* StringExtension.swift */; };
+		C97504A32542F19B00161A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504A22542F19B00161A76 /* LoginViewController.swift */; };
+		C97504A72542F89600161A76 /* UserAccess.strings in Resources */ = {isa = PBXBuildFile; fileRef = C97504A62542F89600161A76 /* UserAccess.strings */; };
+		C97504AB2542FC3400161A76 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504A92542FC3400161A76 /* SwiftGenStrings.swift */; };
+		C97504AD2542FC5C00161A76 /* SwiftGenStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504AC2542FC5C00161A76 /* SwiftGenStoryboards.swift */; };
+		C97504AF254302BD00161A76 /* SwiftGenAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504AE254302BD00161A76 /* SwiftGenAssets.swift */; };
+		C97504B22543173100161A76 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504B12543173100161A76 /* LoginPresenter.swift */; };
+		C97504B525431A9C00161A76 /* LoginDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97504B425431A9C00161A76 /* LoginDefinitions.swift */; };
 		C984C4ED25404C1100BD8958 /* UserAccessCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C984C4EC25404C1100BD8958 /* UserAccessCoordinator.swift */; };
+		C984C4F12540504100BD8958 /* UserAccess.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C984C4F02540504100BD8958 /* UserAccess.xcassets */; };
 		C9E05563253F647100441901 /* DI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E05561253F647100441901 /* DI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E05566253F647100441901 /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E0555F253F647100441901 /* DI.framework */; };
 		C9E05567253F647100441901 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E0555F253F647100441901 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9E90BE02538669C0051AE21 /* DependencesInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90BD92538669C0051AE21 /* DependencesInjector.framework */; };
-		C9E90BE12538669C0051AE21 /* DependencesInjector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90BD92538669C0051AE21 /* DependencesInjector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9E90BEF253866B30051AE21 /* AppNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E90BED253866B30051AE21 /* AppNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E90BF2253866B30051AE21 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90BEB253866B30051AE21 /* AppNavigation.framework */; };
 		C9E90BF3253866B30051AE21 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90BEB253866B30051AE21 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,7 +56,6 @@
 		C9E90C47253875000051AE21 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E90C45253875000051AE21 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E90C4A253875000051AE21 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90C43253875000051AE21 /* Common.framework */; };
 		C9E90C4B253875000051AE21 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90C43253875000051AE21 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9E90C52253877AD0051AE21 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E90C51253877AD0051AE21 /* Coordinator.swift */; };
 		C9E90C56253878E30051AE21 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E90C43253875000051AE21 /* Common.framework */; };
 		C9E90C5C25387BB70051AE21 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E90C5B25387BB70051AE21 /* AppCoordinator.swift */; };
 		C9E90C5E25387DC90051AE21 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E90C5D25387DC90051AE21 /* Scene.swift */; };
@@ -82,13 +91,6 @@
 			containerPortal = C91621752537253E000714D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C9E0555E253F647100441901;
-			remoteInfo = DI;
-		};
-		C9E90BDE2538669C0051AE21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C91621752537253E000714D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9E90BD82538669C0051AE21;
 			remoteInfo = DI;
 		};
 		C9E90BF0253866B30051AE21 /* PBXContainerItemProxy */ = {
@@ -171,7 +173,6 @@
 				C9E90C26253866E80051AE21 /* Networking.framework in Embed Frameworks */,
 				C9E05567253F647100441901 /* DI.framework in Embed Frameworks */,
 				C9E90C4B253875000051AE21 /* Common.framework in Embed Frameworks */,
-				C9E90BE12538669C0051AE21 /* DependencesInjector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +218,19 @@
 		C916219E25372540000714D8 /* IoasysTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IoasysTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91621A225372540000714D8 /* IoasysTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IoasysTestUITests.swift; sourceTree = "<group>"; };
 		C91621A425372540000714D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C95D9D002541ABC500487293 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		C95D9D022541AC2200487293 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		C95D9D042541B1DD00487293 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C97504A22542F19B00161A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C97504A62542F89600161A76 /* UserAccess.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = UserAccess.strings; sourceTree = "<group>"; };
+		C97504A92542FC3400161A76 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
+		C97504AC2542FC5C00161A76 /* SwiftGenStoryboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStoryboards.swift; sourceTree = "<group>"; };
+		C97504AE254302BD00161A76 /* SwiftGenAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenAssets.swift; sourceTree = "<group>"; };
+		C97504B12543173100161A76 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C97504B425431A9C00161A76 /* LoginDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDefinitions.swift; sourceTree = "<group>"; };
 		C984C4EA254048DE00BD8958 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C984C4EC25404C1100BD8958 /* UserAccessCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccessCoordinator.swift; sourceTree = "<group>"; };
+		C984C4F02540504100BD8958 /* UserAccess.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserAccess.xcassets; sourceTree = "<group>"; };
 		C9E0555F253F647100441901 /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E05561253F647100441901 /* DI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DI.h; sourceTree = "<group>"; };
 		C9E05562253F647100441901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -276,7 +288,6 @@
 				C9E05566253F647100441901 /* DI.framework in Frameworks */,
 				C9E90C25253866E80051AE21 /* Networking.framework in Frameworks */,
 				C9E90C4A253875000051AE21 /* Common.framework in Frameworks */,
-				C9E90BE02538669C0051AE21 /* DependencesInjector.framework in Frameworks */,
 				91466C379368DE8E5FF5B2E1 /* Pods_IoasysTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +462,66 @@
 			path = IoasysTestUITests;
 			sourceTree = "<group>";
 		};
+		C95D9CFE2541AB8C00487293 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C95D9CFF2541ABA300487293 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C95D9CFF2541ABA300487293 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C95D9D002541ABC500487293 /* UINavigationControllerExtension.swift */,
+				C95D9D022541AC2200487293 /* UIViewControllerExtension.swift */,
+				C95D9D042541B1DD00487293 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C97504A12542F16D00161A76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C97504A22542F19B00161A76 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C97504A42542F57900161A76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C97504A52542F59700161A76 /* Generated */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C97504A52542F59700161A76 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C97504AE254302BD00161A76 /* SwiftGenAssets.swift */,
+				C97504AC2542FC5C00161A76 /* SwiftGenStoryboards.swift */,
+				C97504A92542FC3400161A76 /* SwiftGenStrings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		C97504B02543171300161A76 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				C97504B12543173100161A76 /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		C97504B325431A8B00161A76 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				C97504B425431A9C00161A76 /* LoginDefinitions.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		C9E05560253F647100441901 /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +590,7 @@
 		C9E90C44253875000051AE21 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C95D9CFE2541AB8C00487293 /* Helpers */,
 				C9E90C50253877320051AE21 /* Coordinator */,
 				C9E90C4F2538751D0051AE21 /* Supporting Files */,
 				C9E90C45253875000051AE21 /* Common.h */,
@@ -564,8 +636,12 @@
 		C9E90C8325389F7D0051AE21 /* UserAccess */ = {
 			isa = PBXGroup;
 			children = (
+				C97504B325431A8B00161A76 /* Definitions */,
+				C97504B02543171300161A76 /* Presenters */,
+				C97504A42542F57900161A76 /* Helpers */,
 				C9F99AD22539B7BD00A18EAF /* Coordinators */,
 				C9F99AD32539BF1000A18EAF /* Storyboards */,
+				C97504A12542F16D00161A76 /* Controllers */,
 				C9E90C922538AC190051AE21 /* Resources */,
 				C9E90C8E2538A6460051AE21 /* Supporting Files */,
 				C9E90C8425389F7D0051AE21 /* UserAccess.h */,
@@ -584,6 +660,8 @@
 		C9E90C922538AC190051AE21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C984C4F02540504100BD8958 /* UserAccess.xcassets */,
+				C97504A62542F89600161A76 /* UserAccess.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -728,7 +806,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C9E90BDF2538669C0051AE21 /* PBXTargetDependency */,
 				C9E90BF1253866B30051AE21 /* PBXTargetDependency */,
 				C9E90C02253866D60051AE21 /* PBXTargetDependency */,
 				C9E90C13253866DF0051AE21 /* PBXTargetDependency */,
@@ -1120,6 +1197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C984C4F12540504100BD8958 /* UserAccess.xcassets in Resources */,
+				C97504A72542F89600161A76 /* UserAccess.strings in Resources */,
 				C9E90C912538A8480051AE21 /* UserAccess.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1434,7 +1513,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E90C5C25387BB70051AE21 /* AppCoordinator.swift in Sources */,
-				C9E90C52253877AD0051AE21 /* Coordinator.swift in Sources */,
 				C9E90C5E25387DC90051AE21 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1471,7 +1549,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95D9D032541AC2200487293 /* UIViewControllerExtension.swift in Sources */,
+				C95D9CFD2541A90E00487293 /* Coordinator.swift in Sources */,
+				C95D9D052541B1DD00487293 /* StringExtension.swift in Sources */,
 				C9F99AD52539BF9400A18EAF /* Router.swift in Sources */,
+				C95D9D012541ABC500487293 /* UINavigationControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1479,6 +1561,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97504B22543173100161A76 /* LoginPresenter.swift in Sources */,
+				C97504A32542F19B00161A76 /* LoginViewController.swift in Sources */,
+				C97504AB2542FC3400161A76 /* SwiftGenStrings.swift in Sources */,
+				C97504AD2542FC5C00161A76 /* SwiftGenStoryboards.swift in Sources */,
+				C97504AF254302BD00161A76 /* SwiftGenAssets.swift in Sources */,
+				C97504B525431A9C00161A76 /* LoginDefinitions.swift in Sources */,
 				C984C4ED25404C1100BD8958 /* UserAccessCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1500,11 +1588,6 @@
 			isa = PBXTargetDependency;
 			target = C9E0555E253F647100441901 /* DI */;
 			targetProxy = C9E05564253F647100441901 /* PBXContainerItemProxy */;
-		};
-		C9E90BDF2538669C0051AE21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9E90BD82538669C0051AE21 /* DependencesInjector */;
-			targetProxy = C9E90BDE2538669C0051AE21 /* PBXContainerItemProxy */;
 		};
 		C9E90BF1253866B30051AE21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

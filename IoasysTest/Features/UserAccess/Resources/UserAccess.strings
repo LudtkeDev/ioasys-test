@@ -1,0 +1,12 @@
+/* 
+  UserAccess.strings
+  IoasysTest
+
+  Created by Gustavo Ludtke on 23/10/20.
+  Copyright © 2020 Gustavo Ludtke. All rights reserved.
+*/
+
+"welcomeMessage" = "Seja bem vindo ao empresas!";
+"email" = "Email";
+"password" = "Senha";
+"enter" = "Entrar";

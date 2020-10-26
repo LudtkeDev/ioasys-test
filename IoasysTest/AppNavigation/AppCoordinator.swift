@@ -9,16 +9,19 @@
 import Common
 import Foundation
 import UIKit
+import Swinject
 
 public class AppCoordinator: Coordinator {
     // MARK: Variables
     public var navigationController: UINavigationController
     public var window: UIWindow
+    public var container: Container
     
     // MARK: Lifecycle
-    public init(navigation: UINavigationController, window: UIWindow) {
-        self.navigationController = navigation
+    public init(container: Container, window: UIWindow) {
+        self.container = container
         self.window = window
+        self.navigationController = UINavigationController()
     }
     
     // MARK: Methods
