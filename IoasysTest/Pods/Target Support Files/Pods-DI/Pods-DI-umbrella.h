@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DependencesInjectorVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DependencesInjectorVersionString[];
+FOUNDATION_EXPORT double Pods_DIVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DIVersionString[];
 

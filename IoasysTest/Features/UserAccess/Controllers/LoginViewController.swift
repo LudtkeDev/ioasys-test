@@ -22,7 +22,7 @@ public class LoginViewController: UIViewController {
     @IBOutlet private weak var loginButton: UIButton!
     
     // MARK: - Variables
-    private var presenter: LoginViewPresenting?
+    public var presenter: LoginViewPresenting?
     private var email: String?
     private var password: String?
     
@@ -32,6 +32,7 @@ public class LoginViewController: UIViewController {
         setupLabels()
         setupButtons()
         setupTextFields()
+        navigationController?.isNavigationBarHidden = true
     }
     
     private func setupImages() {
@@ -78,5 +79,19 @@ public class LoginViewController: UIViewController {
     
     @objc private func passwordDidChange() {
         password = passwordTextField.text
+    }
+}
+
+extension LoginViewController: LoginViewable {
+    public func showEmailError(_ error: String) {
+        print("a")
+    }
+    
+    public func showPasswordError(_ error: String) {
+        print("a")
+    }
+    
+    public func blockScreen(isBlocked: Bool) {
+        print("a")
     }
 }

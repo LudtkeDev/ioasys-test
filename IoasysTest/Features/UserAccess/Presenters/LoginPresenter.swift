@@ -6,6 +6,7 @@
 //  Copyright © 2020 Gustavo Ludtke. All rights reserved.
 //
 
+import Domain
 import Foundation
 
 public class LoginPresenter: LoginPresentationHolding {
@@ -30,7 +31,12 @@ extension LoginPresenter: LoginViewPresenting {
     public func login(email: String, password: String) {
         view?.blockScreen(isBlocked: true)
         interactor.authenticate(email: email, password: password) { [weak self] result in
-            // TODO: Handle this result
+            switch result {
+            case .success(let data):
+                print("TODO: Handle data")
+            case .failure(let error):
+                print("TODO: Handle error")
+            }
         }        
     }
 }

@@ -6,10 +6,12 @@
 //  Copyright © 2020 Gustavo Ludtke. All rights reserved.
 //
 
-import Common
 import Foundation
 import UIKit
+import Common
+import UserAccess
 import Swinject
+import SwinjectAutoregistration
 
 public class AppCoordinator: Coordinator {
     // MARK: Variables
@@ -28,23 +30,30 @@ public class AppCoordinator: Coordinator {
     public func start() {
         window.rootViewController = self.navigationController
         window.makeKeyAndVisible()
+        show(scene: .login)
     }
     
     public func show(scene: Scene) {
-        let coordinator: Coordinator
+        var coordinator: Coordinator?
         
         switch scene {
-        case .login:
-            // TODO: Make login coordinator
-            print("Make login coordinator")
+        case .login: coordinator = container ~> (UserAccessCoordinator.self)
         case .companyList:
-            // TODO: Make company list coordinator
             print("Make company list coordinator")
         case .companyDetail:
-            // TODO: Make company detail coordinator
             print("Make company detail coordinator")
         }
         
-//        coordinator.start()
+        coordinator?.start()
+    }
+}
+
+// MARK: - Login
+extension AppCoordinator: LoginDepartingCoordinating {
+    public func navigateToCompanyList() {
+        // TODO: Remove this test code and implement Home Coordinator
+        let viewController = UIViewController()
+        self.navigationController.setViewControllers([viewController],
+                                                     animated: shouldNavigateWithAnimation())
     }
 }

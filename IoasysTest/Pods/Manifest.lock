@@ -1,5 +1,7 @@
 PODS:
-  - Alamofire (5.2.2)
+  - Alamofire (5.0.5)
+  - AlamofireNetworkActivityLogger (3.0.0):
+    - Alamofire (~> 5.0.0-rc.2)
   - KeychainAccess (4.2.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -22,7 +24,7 @@ PODS:
     - Swinject (~> 2.7.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
+  - AlamofireNetworkActivityLogger (~> 3.0.0)
   - KeychainAccess
   - OxeNetworking
   - SwiftGen (~> 6.0)
@@ -34,6 +36,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireNetworkActivityLogger
     - KeychainAccess
     - Moya
     - OxeNetworking
@@ -54,7 +57,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Swinject/SwinjectStoryboard
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   OxeNetworking: 15f44757b83899cf773a30e202feb69f66d6cc41
@@ -65,6 +69,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
   SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
 
-PODFILE CHECKSUM: c3055303bec70d79f248b2671ce2a86e2aa0f23b
+PODFILE CHECKSUM: 8049c330e148c6fce33e6871d5d7957a56f00174
 
 COCOAPODS: 1.9.3

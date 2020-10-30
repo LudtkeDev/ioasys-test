@@ -6,6 +6,7 @@
 //  Copyright © 2020 Gustavo Ludtke. All rights reserved.
 //
 
+import Domain
 import Foundation
 
 // ViewController -> Presenter protocol communication

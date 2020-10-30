@@ -7,6 +7,12 @@ def sharedPods
   pod 'SwiftLint'
 end
 
+def swinject
+  pod 'Swinject', '~> 2.7.0'
+  pod 'SwinjectAutoregistration', '~> 2.7.0'
+  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard', :branch => 'master'
+end
+
 # Modules pods
 
 def presentationPods
@@ -15,18 +21,20 @@ end
 
 def diPods
   pod 'OxeNetworking'
-  pod 'Swinject', '~> 2.7.0'
-  pod 'SwinjectAutoregistration', '~> 2.7.0'
-  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard', :branch => 'master'
+  swinject
 end 
 
 def networkingPods
   pod 'OxeNetworking'
-  pod 'Alamofire', '~> 5.2'
+  pod 'AlamofireNetworkActivityLogger', '~> 3.0.0'
 end 
 
 def storagePods
   pod 'KeychainAccess'
+end
+
+def userAccessPods
+  swinject
 end
 
 # Targets
@@ -60,7 +68,7 @@ target 'Common' do
   diPods
 end
 
-target 'DependencesInjector' do
+target 'DI' do
   sharedPods
   diPods
 end
@@ -82,4 +90,5 @@ end
 
 target 'UserAccess' do
   sharedPods
+  userAccessPods
 end
