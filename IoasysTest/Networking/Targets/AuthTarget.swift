@@ -46,8 +46,8 @@ extension AuthTarget: TargetType {
     
     public var path: String {
         switch self {
-        case .login(_, _):
-            return "\(baseURL)/\(api)/\(version)/users/auth/sign_in"
+        case .login:
+            return "\(api)/\(version)/users/auth/sign_in"
         }
     }
     
